@@ -1439,8 +1439,15 @@ textarea.form-input::-webkit-resizer { display: none; }
   }
 
   .testimonials-text {
-    line-clamp: 2;
+    /* line-clamp: 2;
+    -webkit-line-clamp: 2; */
+    
+    display:-webkit-box;
     -webkit-line-clamp: 2;
+    overflow: hidden;
+    /* autoprefixer: off */
+    -webkit-box-orient: vertical;
+    /* autoprefixer: on */
   }
 
   /* testimonials modal */

@@ -29,6 +29,7 @@ const modalText = document.querySelector("[data-modal-text]");
 
 // modal toggle function
 const testimonialsModalFunc = function () {
+  
   modalContainer.classList.toggle("active");
   overlay.classList.toggle("active");
 }
