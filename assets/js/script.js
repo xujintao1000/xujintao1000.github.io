@@ -200,3 +200,17 @@ const switchLanguage = function () {
 
 const switch_language = document.querySelector("[switch-language]");
 switch_language.addEventListener("click", switchLanguage);
+
+
+
+
+
+
+const zoomin_image = document.querySelectorAll("[zoom-image]");
+for (let i = 0; i < zoomin_image.length; i++) {
+  zoomin_image[i].addEventListener("click", function() {
+    console.log("image 进来啦");
+    navigationLinks[i].classList.add("fullsize")
+  });
+}
+// zoom in image
