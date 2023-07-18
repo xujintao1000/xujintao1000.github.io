@@ -158,3 +158,45 @@ for (let i = 0; i < navigationLinks.length; i++) {
 
   });
 }
+
+
+
+
+// 切换中英文
+var my_language=false; // true:英文， false：中文;
+
+const switchLanguage = function () { 
+  // console.log("优秀");
+  // sidebar
+  var js_email = document.getElementById("my_email");//查找元素
+  var js_phone = document.getElementById("my_phone");//查找元素
+  var js_birthday = document.getElementById("my_birthday");//查找元素
+  var js_location = document.getElementById("my_location");//查找元素
+  var js_about_myself = document.getElementById("about-about-myself");//查找元素
+  
+  
+  if(my_language == true){
+    js_email.innerHTML="EMAIL";//改变内容
+    js_phone.innerHTML="PHONE";
+    js_birthday.innerHTML="BIRTHDAY";
+    js_location.innerHTML="LOCATION";
+    js_about_myself.innerText="About Me";
+    
+  } else {
+    js_email.innerHTML="邮箱";//改变内容
+    js_phone.innerHTML="手机";
+    js_birthday.innerHTML="生日";
+    js_location.innerHTML="地址";
+    js_about_myself.innerText="我的介绍";
+  }
+
+  if(my_language == true){
+    my_language=false;
+  }else{
+    my_language=true;
+  }
+  
+}
+
+const switch_language = document.querySelector("[switch-language]");
+switch_language.addEventListener("click", switchLanguage);
