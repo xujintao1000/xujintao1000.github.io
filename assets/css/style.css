@@ -1930,8 +1930,8 @@ textarea.form-input::-webkit-resizer { display: none; }
 
 
 .club_image {
-  width: 400px;
-  height: 250px;
-  justify-content: center;
-  align-items: center;
+  margin: 0 auto;
+  width: 50%;
+  /* justify-content: center;
+  align-items: center; */
 }
