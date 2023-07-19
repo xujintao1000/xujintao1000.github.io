@@ -354,6 +354,22 @@ main {
   border-radius: 8px;
 }
 
+.title_new{
+  color: var(--white-1);
+  background: var(--onyx);
+  font-size: var(--fs-8);
+  font-weight: var(--fw-300);
+  width: max-content;
+  margin-top: 5px;
+  /* margin-bottom: 30px; */
+  padding: 3px 12px;
+  border-radius: 8px;
+  /* text-align: center; */
+  /* margin:auto; */
+  margin-left: 0px;
+  /* align-items: center; */
+}
+
 .info_more-btn {
   position: absolute;
   top: -15px;
@@ -1255,6 +1271,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .clients-item { min-width: calc(33.33% - 10px); }
 
+  
 
 
   /**
@@ -1296,7 +1313,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   }
 
-
+  
 
   /**
    * #REUSED STYLE
@@ -1358,6 +1375,7 @@ textarea.form-input::-webkit-resizer { display: none; }
   .info-content .name { margin-bottom: 15px; }
 
   .info-content .title { padding: 5px 18px; }
+
 
   .info_more-btn {
     top: -30px;
@@ -1580,7 +1598,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .has-scrollbar::-webkit-scrollbar-button { width: 100px; }
 
-
+  
 
   /**
    * SIDEBAR
@@ -1687,7 +1705,6 @@ textarea.form-input::-webkit-resizer { display: none; }
     --shadow-3: 0 16px 40px hsla(0, 0%, 0%, 0.125);
 
   }
-
 
 
   /**
@@ -1807,7 +1824,10 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   body::-webkit-scrollbar-button { height: 60px; }
 
-
+  /**
+  * Manu bar info list
+  */
+  .title_new { margin: 6px auto;}
 
   /**
    * REUSED STYLE
@@ -1863,8 +1883,9 @@ textarea.form-input::-webkit-resizer { display: none; }
     text-align: center;
   }
 
-  .info-content .title { margin: auto; }
 
+  /* .title_new {margin-left:0px;} */
+  
   .info_more-btn { display: none; }
 
   .sidebar-info_more {
@@ -1930,7 +1951,7 @@ textarea.form-input::-webkit-resizer { display: none; }
 .club_image {
   margin: 0 auto;
   width: 50%;
-  position: fixed;
+  position: relative;
   /* justify-content: center;
   align-items: center; */
 }
