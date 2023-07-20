@@ -56,7 +56,7 @@
         </div>
 
         <button class="info_more-btn" data-sidebar-btn>
-          <span>Show Contacts</span>
+          <span id="show_my_contact">Show Contacts</span>
 
           <ion-icon name="chevron-down"></ion-icon>
         </button>
@@ -106,7 +106,7 @@
             <div class="contact-info">
               <p class="contact-title" id="my_birthday">Birthday</p>
 
-              <time datetime="1982-06-23">Nov, 1999</time>
+              <time datetime="1999-11" id="my_birthday_date">Nov, 1999</time>
             </div>
 
           </li>
@@ -187,27 +187,27 @@
         <ul class="navbar-list">
 
           <li class="navbar-item">
-            <button class="navbar-link  active" data-nav-link id="nav_bar_1">About</button>
+            <button class="navbar-link  active" data-nav-link id="About">About</button>
           </li>
 
           <li class="navbar-item">
-            <button class="navbar-link" data-nav-link id="nav_bar_2">Resume</button>
+            <button class="navbar-link" data-nav-link id="Resume">Resume</button>
           </li>
 
           <li class="navbar-item">
-            <button class="navbar-link" data-nav-link id="nav_bar_3">Portfolio</button>
+            <button class="navbar-link" data-nav-link id="Portfolio">Portfolio</button>
           </li>
 
           <!-- <li class="navbar-item">
             <button class="navbar-link" data-nav-link id="nav_bar_4">Blog</button>
           </li> -->
 
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link id="nav_bar_5">Contact</button>
-          </li>
+          <!-- <li class="navbar-item">
+            <button class="navbar-link" data-nav-link id="Contact">Contact</button>
+          </li> -->
 
           <li class="navbar-item">
-            <button class="navbar-link" switch-language id="nav_bar_6">English/中文</button>
+            <button class="navbar-link" data-nav-link switch-language id="English/中文">English/中文</button>
           </li>
 
         </ul>
@@ -222,7 +222,7 @@
         - #ABOUT
       -->
 
-      <article class="about  active" data-page="about" data-page-CN = "主页">
+      <article class="about  active" data-page="about">
 
         <header>
           <h2 class="h2 article-title" id="about-about-myself">About me</h2>
@@ -579,7 +579,7 @@
         - #RESUME
       -->
 
-      <article class="resume" data-page="resume" data-page-CN = "简历">
+      <article class="resume" data-page="resume">
 
         <header>
           <h2 class="h2 article-title">Resume</h2>
@@ -825,7 +825,7 @@
         - #PORTFOLIO
       -->
 
-      <article class="portfolio" data-page="portfolio" data-page-CN = "文档">
+      <article class="portfolio" data-page="portfolio">
 
         <header>
           <h2 class="h2 article-title">Portfolio</h2>
@@ -2129,7 +2129,7 @@
         - #CONTACT
       -->
 
-      <article class="contact" data-page="contact" data-page-CN = "联系">
+      <article class="contact" data-page="contact">
 
         <header>
           <h2 class="h2 article-title">Contact</h2>

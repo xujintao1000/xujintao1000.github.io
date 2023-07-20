@@ -140,17 +140,21 @@ for (let i = 0; i < formInputs.length; i++) {
 // page navigation variables
 const navigationLinks = document.querySelectorAll("[data-nav-link]");
 const pages = document.querySelectorAll("[data-page]");
-const pages_CN = document.querySelectorAll("[data-page-CN]");
+const pages_CN = ["主页", "简历", "文档", "English/中文"]
+// const pages_CN = document.querySelectorAll("[data-page-CN]");
 
 // add event to all nav link
 for (let i = 0; i < navigationLinks.length; i++) {
   navigationLinks[i].addEventListener("click", function () {
-    console.log(this.innerHTML.toLowerCase())
+    // console.log(this.innerHTML.toLowerCase())
+    // console.log(pages[i].dataset.page)
     for (let i = 0; i < pages.length; i++) {
-      if ((this.innerHTML.toLowerCase() === pages[i].dataset.page)) {
+      if ((this.innerHTML.toLowerCase() === pages[i].dataset.page) || this.innerHTML.toLowerCase()===pages_CN[i]) {
         pages[i].classList.add("active");
         navigationLinks[i].classList.add("active");
         window.scrollTo(0, 0);
+      } else if(this.innerHTML.toLowerCase() === "english/中文"){
+        console.log("切换中文")
       } else {
         pages[i].classList.remove("active");
         navigationLinks[i].classList.remove("active");
@@ -170,13 +174,13 @@ var my_language=false; // true:英文， false：中文;
 
 const switchLanguage = function () { 
   // console.log("优秀");
-
-  var js_nav_bar_1 =  document.getElementById("nav_bar_1");
-  var js_nav_bar_2 =  document.getElementById("nav_bar_2");
-  var js_nav_bar_3 =  document.getElementById("nav_bar_3");
+  var js_show_my_contact = document.getElementById("show_my_contact");
+  var js_nav_bar_1 =  document.getElementById("About");
+  var js_nav_bar_2 =  document.getElementById("Resume");
+  var js_nav_bar_3 =  document.getElementById("Portfolio");
   // var js_nav_bar_4 =  document.getElementById("nav_bar_4");
-  var js_nav_bar_5 =  document.getElementById("nav_bar_5");
-  // var js_nav_bar_6 =  document.getElementById("nav_bar_6");
+  // var js_nav_bar_5 =  document.getElementById("Contact");
+  // var js_nav_bar_6 =  document.getElementById("English/中文");
 
 
   // sidebar
@@ -187,6 +191,7 @@ const switchLanguage = function () {
   var js_email = document.getElementById("my_email");
   var js_phone = document.getElementById("my_phone");
   var js_birthday = document.getElementById("my_birthday");
+  var js_my_birthday_date = document.getElementById("my_birthday_date");
   var js_location = document.getElementById("my_location");
   var js_location_detail = document.getElementById("my_location_detail");
 
@@ -219,11 +224,13 @@ const switchLanguage = function () {
    
   
   if(my_language == true){
+    js_show_my_contact.innerHTML = "Show Contact";
+
     js_nav_bar_1.innerHTML="About";
     js_nav_bar_2.innerHTML="Resume";
     js_nav_bar_3.innerHTML="Portfolio";
     // js_nav_bar_4.innerHTML="Blog";
-    js_nav_bar_5.innerHTML="Contact";
+    // js_nav_bar_5.innerHTML="Contact";
     // js_nav_bar_6.innerHTML="切换中文";
 
 
@@ -234,6 +241,7 @@ const switchLanguage = function () {
     js_email.innerHTML="EMAIL";//改变内容
     js_phone.innerHTML="PHONE";
     js_birthday.innerHTML="BIRTHDAY";
+    js_my_birthday_date.innerHTML="Nov, 1999";
     js_location.innerHTML="LOCATION";
     js_about_myself.innerText="About Me";
     js_location_detail.innerHTML="Toronto, ON., Canada";
@@ -261,11 +269,13 @@ const switchLanguage = function () {
     js_fourth_subtitle.innerHTML = "Certificate";
 
   } else {
+    js_show_my_contact.innerHTML = "显示联络方式";
+
     js_nav_bar_1.innerHTML="主页";
     js_nav_bar_2.innerHTML="简历";
     js_nav_bar_3.innerHTML="文档";
     // js_nav_bar_4.innerHTML="Blog";
-    js_nav_bar_5.innerHTML="联系";
+    // js_nav_bar_5.innerHTML="联系";
     // js_nav_bar_6.innerHTML="Engligh language";
 
     js_name.innerHTML="徐锦涛";
@@ -275,6 +285,7 @@ const switchLanguage = function () {
     js_email.innerHTML="邮箱";//改变内容
     js_phone.innerHTML="手机";
     js_birthday.innerHTML="生日";
+    js_my_birthday_date.innerHTML = "1999年，11月";
     js_location.innerHTML="地址";
     js_about_myself.innerText="我的介绍";
     js_location_detail.innerHTML="深圳, 广东, 中国";
