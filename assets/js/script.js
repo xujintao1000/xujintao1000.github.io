@@ -27,6 +27,11 @@ const modalImg = document.querySelector("[data-modal-img]");
 const modalTitle = document.querySelector("[data-modal-title]");
 const modalText = document.querySelector("[data-modal-text]");
 
+const clubImage = document.querySelectorAll("[mainpage-club-image]")
+
+
+
+
 // modal toggle function
 const testimonialsModalFunc = function () {
   
@@ -38,7 +43,18 @@ const testimonialsModalFunc = function () {
 for (let i = 0; i < testimonialsItem.length; i++) {
 
   testimonialsItem[i].addEventListener("click", function () {
-
+    
+    for (let j = 0; j < clubImage.length; j++) {
+      console.log("value i")
+      console.log(i)
+      console.log("value j")
+      console.log(j)
+      if(i===j){
+        clubImage[j].style.display = "block";
+      } else {
+        clubImage[j].style.display = "none";
+      }
+    }
     modalImg.src = this.querySelector("[data-testimonials-avatar]").src;
     modalImg.alt = this.querySelector("[data-testimonials-avatar]").alt;
     modalTitle.innerHTML = this.querySelector("[data-testimonials-title]").innerHTML;
