@@ -146,18 +146,24 @@ const pages_CN = ["主页", "简历", "文档", "English/中文"]
 // add event to all nav link
 for (let i = 0; i < navigationLinks.length; i++) {
   navigationLinks[i].addEventListener("click", function () {
-    // console.log(this.innerHTML.toLowerCase())
-    // console.log(pages[i].dataset.page)
+    console.log(this.innerHTML.toLowerCase())
+    console.log(pages[i].dataset.page)
     for (let i = 0; i < pages.length; i++) {
       if ((this.innerHTML.toLowerCase() === pages[i].dataset.page) || this.innerHTML.toLowerCase()===pages_CN[i]) {
         pages[i].classList.add("active");
         navigationLinks[i].classList.add("active");
         window.scrollTo(0, 0);
-      } else if(this.innerHTML.toLowerCase() === "english/中文"){
+      } else if(this.innerHTML.toLowerCase() === "english" || this.innerHTML.toLowerCase() === "中文"){
         console.log("切换中文")
       } else {
-        pages[i].classList.remove("active");
-        navigationLinks[i].classList.remove("active");
+        // pages[i].classList.remove("active");
+        // navigationLinks[i].classList.remove("active");
+        if(typeof navigationLinks[i] === 'undefined'){
+          continue;
+        } else {
+          pages[i].classList.remove("active");
+          navigationLinks[i].classList.remove("active");
+        }
       }
     }
 
