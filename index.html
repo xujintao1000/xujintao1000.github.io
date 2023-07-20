@@ -48,9 +48,9 @@
         <div class="info-content">
           <h1 class="name" title="Jintao Xu" id="my_name">Jintao Xu</h1>
 
-          <p style="word-break:break-all; white-space:normal" class="title_new">New ECE Bachelor's Degree Students</p>
-          <p style="word-break:break-all;" class="title_new">Seeking Full-Time Software Engineer Job </p>
-          <p style="word-break:break-all;" class="title_new">C, C++, Python, SQL, Matlab, Verilog</p>
+          <p style="word-break:break-all; white-space:normal" class="title_new" id="title_tag_1">New ECE Bachelor's Degree Students</p>
+          <p style="word-break:break-all;" class="title_new" id="title_tag_2">Seeking Full-Time Software Engineer Job </p>
+          <p style="word-break:break-all;" class="title_new" id="title_tag_3">C, C++, Python, SQL, Matlab, Verilog</p>
           
 
         </div>
@@ -187,27 +187,27 @@
         <ul class="navbar-list">
 
           <li class="navbar-item">
-            <button class="navbar-link  active" data-nav-link>About</button>
+            <button class="navbar-link  active" data-nav-link id="nav_bar_1">About</button>
           </li>
 
           <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Resume</button>
+            <button class="navbar-link" data-nav-link id="nav_bar_2">Resume</button>
           </li>
 
           <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Portfolio</button>
+            <button class="navbar-link" data-nav-link id="nav_bar_3">Portfolio</button>
           </li>
 
           <!-- <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Blog</button>
+            <button class="navbar-link" data-nav-link id="nav_bar_4">Blog</button>
           </li> -->
 
           <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Contact</button>
+            <button class="navbar-link" data-nav-link id="nav_bar_5">Contact</button>
           </li>
 
           <li class="navbar-item">
-            <button class="navbar-link" switch-language>English/中文</button>
+            <button class="navbar-link" switch-language id="nav_bar_6">English/中文</button>
           </li>
 
         </ul>
@@ -222,20 +222,19 @@
         - #ABOUT
       -->
 
-      <article class="about  active" data-page="about">
+      <article class="about  active" data-page="about" data-page-CN = "主页">
 
         <header>
           <h2 class="h2 article-title" id="about-about-myself">About me</h2>
         </header>
 
         <section class="about-text">
-          <p>
+          <p id="my_intro">
             Hello, nice to meet you! I am a programmer with proficiency in various programming software and operating systems, 
             allowing me to adapt to different programming environments. My programming journey started with C and C++, and I 
             have continuously expanded my knowledge by taking courses and exploring different programming languages and environments.
-          </p>
-
-          <p>
+            <br>
+            <br>
             I have experience working with languages such as Python, Processing, Java, Verilog, and technologies like Git, SQL, 
             HTML, CSS, JavaScript, Markdown, WXML, and XML. In each of these environments, I have completed meaningful projects 
             that have further honed my skills.
@@ -249,7 +248,7 @@
 
         <section class="service">
 
-          <h3 class="h3 service-title">What i'm doing</h3>
+          <h3 class="h3 service-title" id="second_subtitle">What i'm doing</h3>
 
           <ul class="service-list">
 
@@ -261,14 +260,10 @@
               </div>
 
               <div class="service-content-box">
-                <h4 class="h4 service-item-title">Software</h4>
+                <h4 class="h4 service-item-title" id="second_subtitle_1">Software</h4>
 
-                <p class="service-item-text">
-                  Software and programming involve the development and 
-                  implementation of computer programs to perform specific tasks. 
-                  C++, C, and Python are popular programming languages used for 
-                  software development. They provide tools and syntax to write 
-                  code, create applications, and solve problems efficiently.
+                <p class="service-item-text" id="second_subtitle_1_text">
+                  Extensive software background, adept in various programming languages and tools.
                 </p>
               </div>
 
@@ -281,13 +276,10 @@
               </div>
 
               <div class="service-content-box">
-                <h4 class="h4 service-item-title">Programming</h4>
+                <h4 class="h4 service-item-title" id="second_subtitle_2">Database</h4>
 
-                <p class="service-item-text">
-                  A database is a structured collection of data that is organized, 
-                  managed, and accessed through a software system. It provides a 
-                  way to store, retrieve, and manipulate data efficiently, ensuring 
-                  data integrity and enabling efficient data analysis and retrieval.
+                <p class="service-item-text" id="second_subtitle_2_text">
+                  Proficient in managing databases, and ensuring data integrity for successful project outcomes.
                 </p>
               </div>
 
@@ -300,14 +292,10 @@
               </div>
 
               <div class="service-content-box">
-                <h4 class="h4 service-item-title">Web development</h4>
+                <h4 class="h4 service-item-title" id="second_subtitle_3">Operating System (OS)</h4>
 
-                <p class="service-item-text">
-                  An operating system (OS) is a software that manages computer 
-                  hardware and software resources. It provides an interface 
-                  for users to interact with the computer and allows applications 
-                  to run efficiently, ensuring the smooth execution of tasks and 
-                  managing system resources effectively.
+                <p class="service-item-text" id="second_subtitle_3_text">
+                  Skilled in navigating and optimizing various operating systems to ensure seamless software development.
                 </p>
               </div>
 
@@ -320,14 +308,10 @@
               </div>
 
               <div class="service-content-box">
-                <h4 class="h4 service-item-title">Photography</h4>
+                <h4 class="h4 service-item-title" id="second_subtitle_4">Machine Learning (AI)</h4>
 
-                <p class="service-item-text">
-                  A neural network is a powerful machine learning model 
-                  that can learn and make predictions based on complex 
-                  patterns and data. It includes types such as Artificial 
-                  Neural Networks (ANN) and Convolutional Neural Networks 
-                  (CNN). I have successfully used neural networks for garbage classification.
+                <p class="service-item-text" id="second_subtitle_4_text">
+                  Applied AI algorithms to analyze data, driving insights decision-making for impactful projects.
                 </p>
               </div>
 
@@ -341,12 +325,10 @@
               </div>
 
               <div class="service-content-box">
-                <h4 class="h4 service-item-title">hardware</h4>
+                <h4 class="h4 service-item-title" id="second_subtitle_5">Hardware</h4>
 
-                <p class="service-item-text" >
-                  hardware-Chip-Sharp is an advanced microchip offering exceptional performance and energy efficiency. 
-                  It seamlessly integrates with Arduino, Raspberry Pi, DE1-SoC, ARM, and Verilog, enhancing your 
-                  projects' capabilities and efficiency.
+                <p class="service-item-text" id="second_subtitle_5_text">
+                  Proficient in hardware design, testing, and troubleshooting, contributing to the implementation projects.
                 </p>
               </div>
 
@@ -363,7 +345,7 @@
 
         <section class="testimonials">
 
-          <h3 class="h3 testimonials-title">Club & Internship Experience</h3>
+          <h3 class="h3 testimonials-title" id="third_subtitle">Club & Internship Experience</h3>
 
           <ul class="testimonials-list has-scrollbar">
 
@@ -374,12 +356,12 @@
                   <img src="./assets/images/arduino.png" alt="Daniel lewis" width="60" data-testimonials-avatar>
                 </figure>
 
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>
+                <h4 class="h4 testimonials-item-title" id="third_subtitle_1" data-testimonials-title>
                     UTRA SUMO
                 </h4>
 
                 <div class="testimonials-text" data-testimonials-text>
-                  <p>
+                  <p id="third_subtitle_1_text">
                     UTRA is the face of robotics at the University of Toronto (U of T). We design and build robots 
                     to compete in international competitions like RoboGames and the Intelligent Ground Vehicle 
                     Competition, among others. We have five different subteams that work independently and also 
@@ -399,10 +381,10 @@
                   <img src="./assets/images/UTADA.png" alt="UTADA-Image" width="60" data-testimonials-avatar>
                 </figure>
 
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>UTADA</h4>
+                <h4 class="h4 testimonials-item-title" id="third_subtitle_2" data-testimonials-title>UTADA</h4>
 
                 <div class="testimonials-text" data-testimonials-text>
-                  <p>
+                  <p id="third_subtitle_2_text">
                     University of Toronto Application Development Association (UTADA). 
                     As the core department with the largest number of people in UTADA, 
                     the Technology Department is the origin of Development in the name of the club. 
@@ -425,10 +407,10 @@
                   <img src="./assets/images/logo_gdsc.png" alt="JILN" width="60" data-testimonials-avatar>
                 </figure>
 
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>GDSC</h4>
+                <h4 class="h4 testimonials-item-title" id="third_subtitle_3" data-testimonials-title>GDSC</h4>
 
                 <div class="testimonials-text" data-testimonials-text>
-                  <p>
+                  <p id="third_subtitle_3_text">
                     Google Developer Student Clubs are university based 
                     community groups for students interested in Google 
                     developer technologies. Students from all undergraduate 
@@ -451,10 +433,10 @@
                   <img src="./assets/images/JILN.png" alt="JILN" width="60" data-testimonials-avatar>
                 </figure>
 
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>JiLN</h4>
+                <h4 class="h4 testimonials-item-title"  id="third_subtitle_4" data-testimonials-title>JiLN</h4>
 
                 <div class="testimonials-text" data-testimonials-text>
-                  <p>
+                  <p  id="third_subtitle_4_text">
                     During my tenure at Shenzhen Jinling Electronics Co., 
                     Ltd as an IT Project Manager from June 2021 to August 2022, 
                     I had the opportunity to contribute to several key projects a
@@ -523,7 +505,7 @@
 
         <section class="clients">
 
-          <h3 class="h3 clients-title">Certificate</h3>
+          <h3 class="h3 clients-title" id="fourth_subtitle">Certificate</h3>
 
           <ul class="clients-list has-scrollbar">
 
@@ -597,7 +579,7 @@
         - #RESUME
       -->
 
-      <article class="resume" data-page="resume">
+      <article class="resume" data-page="resume" data-page-CN = "简历">
 
         <header>
           <h2 class="h2 article-title">Resume</h2>
@@ -843,7 +825,7 @@
         - #PORTFOLIO
       -->
 
-      <article class="portfolio" data-page="portfolio">
+      <article class="portfolio" data-page="portfolio" data-page-CN = "文档">
 
         <header>
           <h2 class="h2 article-title">Portfolio</h2>
@@ -2147,7 +2129,7 @@
         - #CONTACT
       -->
 
-      <article class="contact" data-page="contact">
+      <article class="contact" data-page="contact" data-page-CN = "联系">
 
         <header>
           <h2 class="h2 article-title">Contact</h2>
