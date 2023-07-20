@@ -489,6 +489,9 @@ main {
 
 .language_switch.active { color: var(--orange-yellow-crayola); }
 
+.club_image{
+  display: none;
+}
 
 
 .navbar {
