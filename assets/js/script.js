@@ -241,6 +241,14 @@ const switchLanguage = function () {
   var js_third_subtitle_3_text = document.getElementById("third_subtitle_3_text");
   var js_third_subtitle_4_text = document.getElementById("third_subtitle_4_text");
 
+  var js_third_subtitle_internship = document.getElementById("third_subtitle_internship");
+  var js_third_subtitle_internship_1 = document.getElementById("third_subtitle_internship_1");
+  var js_third_subtitle_internship_1_text = document.getElementById("third_subtitle_internship_1_text");
+  
+  var js_third_subtitle_work = document.getElementById("third_subtitle_work");
+  var js_third_subtitle_work_1 = document.getElementById("third_subtitle_work_1");
+  var js_third_subtitle_work_1_text = document.getElementById("third_subtitle_work_1_text");
+	
   var js_fourth_subtitle = document.getElementById("fourth_subtitle");
 
   // resume
@@ -317,12 +325,21 @@ const switchLanguage = function () {
     js_second_subtitle_4_text.innerHTML = "Applied AI algorithms to analyze data, driving insights decision-making for impactful projects.";
     js_second_subtitle_5_text.innerHTML = "Proficient in hardware design, testing, and troubleshooting, contributing to the implementation projects.";
 
-    js_third_subtitle.innerHTML = "Club & Internship Experience";
+    js_third_subtitle.innerHTML = "Club Experience";
     js_third_subtitle_1_text.innerHTML = "UTRA is the face of robotics at the University of Toronto (U of T). We design and build robots to compete in international competitions like RoboGames and the Intelligent Ground Vehicle Competition, among others. We have five different subteams that work independently and also host talks and workshops. Our mission is to foster interest in robotics and teach anybody who is interested all that they need to know to be able to contribute.";
     js_third_subtitle_2_text.innerHTML = "University of Toronto Application Development Association (UTADA). As the core department with the largest number of people in UTADA, the Technology Department is the origin of Development in the name of the club. The department has only one main job, which is to develop software or web pages for different platforms. In terms of project selection, the projects developed by the technical department are also divided into community-related content and project teams led by members.";
     js_third_subtitle_3_text.innerHTML = "Google Developer Student Clubs are university based community groups for students interested in Google developer technologies. Students from all undergraduate or graduate programs with an interest in growing as a developer are welcome. By joining a GDSC, students grow their knowledge in a peer-to-peer learning environment and build solutions for local businesses and their community.";
-    js_third_subtitle_4_text.innerHTML = "During my tenure at Shenzhen Jinling Electronics Co., Ltd as an IT Project Manager from June 2021 to August 2022, I had the opportunity to contribute to several key projects and fulfill various responsibilities.";
 
+	js_third_subtitle_internship.innerHTML = "Internship Experience";
+	js_third_subtitle_internship_1.innerHTML = "JiLN";
+	js_third_subtitle_internship_1_text.innerHTML ="During my tenure at Shenzhen Jinling Electronics Co., Ltd as an Network Market Project Manager from June 2021 to August 2022, I had the opportunity to contribute to several key projects and fulfill various responsibilities.";
+	  
+	
+	js_third_subtitle_work.innerHTML = "Work Experience";
+	js_third_subtitle_work_1.innerHTML = "CATL";
+	js_third_subtitle_work_1_text = "CATL is a global leader of new energy innovative technologies, committed to providing premier solutions and services for new energy applications worldwide.";
+	  
+	  
     js_fourth_subtitle.innerHTML = "Certificate";
 
     js_resume_page.innerHTML = "Resume";
@@ -409,12 +426,22 @@ const switchLanguage = function () {
     js_second_subtitle_4_text.innerHTML = "具备深度学习与神经网络背景，熟练应用各类算法解决复杂问题，实践并优化智能化模型。";
     js_second_subtitle_5_text.innerHTML = "熟练设计单片机系统，精通集成线路测试与故障排除，";
     
-    js_third_subtitle.innerHTML = "社团&实习经历";
+	  
+    js_third_subtitle.innerHTML = "社团经历";
     js_third_subtitle_1_text.innerHTML = "UTRA是多伦多大学（U of T）机器人领域的社团。是设计和制造机器人，参加国际竞赛，如RoboGames和智能地面车辆竞赛等。社团有五个不同的子团队独立工作，并举办讲座和工作坊。该社团的使命是培养对机器人技术的兴趣，并教授任何有兴趣的人所需的知识，以便他们能够做出贡献。";
     js_third_subtitle_2_text.innerHTML = "多伦多大学应用开发协会（UTADA）。作为UTADA人数最多的核心部门，技术部门是俱乐部名称下发展的起源。该部门只有一项主要工作，即为不同平台开发软件或网页。在项目选择上，技术部门开发的项目也分为社区相关内容和成员领导的项目团队。";
     js_third_subtitle_3_text.innerHTML = "谷歌开发者学生俱乐部是以大学为基础的社区团体，面向对谷歌开发者技术感兴趣的学生。欢迎来自所有本科生或研究生项目的学生，他们有兴趣成为一名开发人员。通过加入GDSC，学生们可以在对等学习环境中增长知识，并为当地企业及其社区构建解决方案。";
-    js_third_subtitle_4_text.innerHTML = "2021年6月至2022年8月，我在深圳锦凌电子有限公司担任市场网络项目经理期间，有机会为几个关键项目做出贡献，并履行各种职责。";
+	  
+	js_third_subtitle_internship.innerHTML = "实习经历";
+	js_third_subtitle_internship_1.innerHTML = "JiLN-锦凌电子（深圳市）";
+	js_third_subtitle_internship_1_text.innerHTML ="2021年6月至2022年8月，我在深圳锦凌电子有限公司担任市场网络项目经理期间，有机会为几个关键项目做出贡献，并履行各种职责。";
+	  
+	
+	js_third_subtitle_work.innerHTML = "工作经历";
+	js_third_subtitle_work_1.innerHTML = "CATL-宁德时代（宁德市）";
+	js_third_subtitle_work_1_text = "宁德时代新能源科技股份有限公司是全球领先的新能源创新科技公司，致力于为全球新能源应用提供一流解决方案和服务。";
     
+	  
     js_fourth_subtitle.innerHTML = "证书";
 
     // 简历
