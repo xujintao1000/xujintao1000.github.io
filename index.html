@@ -1,1 +1,1390 @@
-hello world!
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jintao's Website</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/01_logo/logo.png" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/02_avator/avatar_1.png" alt="Jintao Xu" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Jintao Xu" id="my_name"></h1>
+
+          <p class="title" id="my_tag_1"></p>
+          <p class="title" id="my_tag_2"></p>
+
+
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>个人信息</span>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">邮箱</p>
+
+              <a href="mailto:danielxujintao@outlook.com" class="contact-link">Danielxujintao@outlook.com</a>
+              <a href="mailto:jintao.xu@mail.utoronto.ca" class="contact-link">Jintao.XU@mail.utoronto.ca</a>
+           
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">手机</p>
+
+              <a href="tel:+18899856822" class="contact-link">+86 188 9985 6822</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">生日</p>
+
+              <time datetime="1982-06-23">Nov, 1999</time>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">住址</p>
+
+              <address>深圳, 广东, 中国</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="https://github.com/xujintao1000" class="social-link">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/xujintao/" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://www.youtube.com/@jintaoxu6408" class="social-link">
+              <ion-icon name="logo-youtube"></ion-icon>
+            </a>
+          </li>
+          
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link id="sidebar_title_1"></button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link id="sidebar_title_2"></button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link id="sidebar_title_3"></button>
+          </li
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link id="sidebar_title_4"></button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link id="sidebar_title_5"></button>
+          </li>
+        </ul>
+
+      </nav>
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" id="article_title_1">
+
+        <header>
+          <h2 class="h2 article-title">自我介绍</h2>
+        </header>
+
+        <section class="about-text" id="article_title_1_content_1">
+          <p>Hi，很高兴您能够访问我的网站。我来自浙江，本科毕业于多伦多大学，是世界QS排名Top20的一所学校，也是加拿大排名第一的大学。
+            我在大学期间主要学习的专业是 <a class="about-text-link" href="https://engineering.calendar.utoronto.ca/section/Electrical-and-Computer-Engineering"> "电子计算机"</a>。
+            在大学生活中我有机会参加了很多软件工程相关的项目，例如SQL数据库的管理，机械手臂的指令运作，网络聊天界面的实现，以及AI垃圾分类等项目。
+            这些项目让我的大学生活过的非常的充实，也让我对于计算机领域有了更加深刻的印象。
+          </p>
+          <p>
+            在我的第一份工作中选在了<a class="about-text-link" href="https://www.catl.com/">宁德时代（CATL）</a>，岗位是软件应用开发工程师，所属电池管理系统部门（BMS）。
+            我选择这个岗位的原因是当今新能源行业的兴起，让我对这个行业开始感兴趣。入职后，我被分配到了继电器小组，主要进行继电器模块的模型变更，并且进行相关的白盒测试，单元检测，polyspace测试等。
+          </p> 
+          <p>
+            在2024年9月底，有幸加入BMS前端部门，实现BMS内部转组的机会。来到前端之后岗位职责更换成系统工程师，主要负责奔驰VANea项目的工作，与奔驰客户对接需求。
+            了解客户的诉求，并且为客户排查BMS相关的问题。
+            持续跟进与维护项目当前状态。24年12月初，有幸去德国奔驰总部现场参与新车首次电池装车的过程。在现场进行直接的问题分析与排查。
+
+          </p>
+        </section>
+
+
+        <!--
+          - service
+        -->
+
+        <section class="service">
+
+          <h3 class="h3 service-title">个人经历</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/01_logo/8_battery.svg" alt="BMS Battery icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">电池管理系统 BMS</h4>
+
+                <p class="service-item-text">
+                  · 熟悉电池管理系统，了解AUTOSAR架构
+                </p>
+                <p class="service-item-text">
+                  · 具有使用CANoe,CANape进行问题排查与分析的能力
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/01_logo/1_arm.svg" alt="Robot Modeling and Control icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">机械手臂的模拟与操控</h4>
+
+                <p class="service-item-text">
+                  使用KuKA六轴机械手臂的物品传递
+                  使用Matlab脚本编译
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/01_logo/2_code.svg" alt="Programming icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">编程</h4>
+
+                <p class="service-item-text">
+                  · 有过开发C/C++/Python/Arduino/Processing/
+                </p>
+                <p class="service-item-text">Verilog/HTML/CSS/JavaScript/Java等相关经验</p>
+                <p class="service-item-text">在Ubuntu，Linux，Windows，FPGA环境上进行代码的编译与测试。</p>
+                <p class="service-item-text"> · 使用过Git进行多人维护代码的迭代管理。</p>
+              </div>
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/01_logo/3_gis.svg" alt="GIS Map icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">真实地图软件</h4>
+
+                <p class="service-item-text">
+                  · 使用C++语言实现全球部分市区的地图状况
+                </p>
+                  <p class="service-item-text">· 能够在地图上实现搜索街道，以及实现两点之间的最短路径。 </p>
+              </div>
+            </li>
+
+
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/01_logo/5_hardware.svg" alt="FPGA icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">FPGA Hardware</h4>
+
+                <p class="service-item-text">
+                  实现FPGA硬件的交互，将板子制作成一个小型游戏机。
+                </p>
+              </div>
+            </li>
+
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/01_logo/7_internet.svg" alt="Online Network" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">多人线上会议</h4>
+
+                <p class="service-item-text">
+                  实现在同一个路由器中，不同的IP地址的设备进行线上文字聊天
+                </p>
+              </div>
+            </li>
+
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/01_logo/9_network.svg" alt="Online Network" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">垃圾分类 AI模型</h4>
+
+                <p class="service-item-text">
+                  制作一个线上软件,该软件功能能将生活常见垃圾进行识别分类,并能反馈出垃圾种类的概率。
+                </p>
+              </div>
+            </li>
+
+            
+          </ul>
+
+        </section>
+
+
+        <!--
+          - testimonials
+        -->
+
+        <section class="testimonials">
+
+          <h3 class="h3 testimonials-title" id="third_subtitle">大学社团经历</h3>
+
+          <ul class="testimonials-list has-scrollbar">
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/01_logo/10_arduino.png" alt="UTRA" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" id="third_subtitle_1" data-testimonials-title>
+                    UTRA SUMO
+                </h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p id="third_subtitle_1_text">
+                    UTRA is the face of robotics at the University of Toronto (U of T). We design and build robots 
+                    to compete in international competitions like RoboGames and the Intelligent Ground Vehicle 
+                    Competition, among others. We have five different subteams that work independently and also 
+                    host talks and workshops. Our mission is to foster interest in robotics and teach anybody 
+                    who is interested all that they need to know to be able to contribute.
+                  </p>
+                  <img src="./assets/images//03_experience/1_club/Campus-Experience-UTRA-SUMO.jpg" alt="UTADA-Image" class="club_image" mainpage-club-image>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images//01_logo/14_UTADA.png" alt="UTADA-Image" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" id="third_subtitle_2" data-testimonials-title>UTADA</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p id="third_subtitle_2_text">
+                    University of Toronto Application Development Association (UTADA). 
+                    As the core department with the largest number of people in UTADA, 
+                    the Technology Department is the origin of Development in the name of the club. 
+                    The department has only one main job, which is to develop software or web pages 
+                    for different platforms. In terms of project selection, the projects developed 
+                    by the technical department are also divided into community-related content 
+                    and project teams led by members.
+                  </p>
+                  <img src="./assets/images//03_experience/1_club/UTADA-1.png" alt="UTADA-Image" class="club_image" mainpage-club-image>
+                </div>
+
+              </div>
+            </li>
+
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/01_logo/13_logo_gdsc.png" alt="JILN" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" id="third_subtitle_3" data-testimonials-title>GDSC</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p id="third_subtitle_3_text">
+                    Google Developer Student Clubs are university based 
+                    community groups for students interested in Google 
+                    developer technologies. Students from all undergraduate 
+                    or graduate programs with an interest in growing as a 
+                    developer are welcome. By joining a GDSC, students grow 
+                    their knowledge in a peer-to-peer learning environment 
+                    and build solutions for local businesses and their community.
+                  </p>
+                  <img src="./assets/images/03_experience/1_club/google_develop_student_club.png" alt="UTADA-Image" class="club_image" mainpage-club-image>
+                </div>
+              </div>
+            </li>
+ 
+
+          </ul>
+
+        </section>
+
+
+        <section class="testimonials">
+
+          <h3 class="h3 testimonials-title" id="third_subtitle_work">实习&工作经历</h3>
+
+          <ul class="testimonials-list has-scrollbar">
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/01_logo/11_catl_logo.png" alt="Daniel lewis" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" id="third_subtitle_work_1" data-testimonials-title>
+                    CATL
+                </h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p id="third_subtitle_work_1_text">
+                    CATL is a global leader of new energy innovative technologies, committed to providing premier solutions and services for new energy applications worldwide.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/01_logo/12_JILN.png" alt="JILN" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" id="third_subtitle_3" data-testimonials-title>GDSC</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p id="third_subtitle_3_text">
+                    · 制作并优化公司官网并宣传网站项目(与外包技术团队协作设计与规划官网,并给出一些源代码可实施方案)
+                    · 同工程研发团队协作完成自动化办公项目(使用Python 实现批量加水印到工程图)
+                    · 创立市场部门,负责公司各网络平台的数据维护与运营,规划公司的未来布局,实时掌控市场行情,并负责与外界对接的宣传资料的审核与管理项目
+                  </p>
+                  <img src="./assets/images/03_experience/1_club/google_develop_student_club.png" alt="UTADA-Image" class="club_image" mainpage-club-image>
+                </div>
+              </div>
+            </li>
+
+          </ul>
+
+ 
+
+          </ul>
+
+        </section>
+
+
+        <!--
+          - testimonials modal
+        -->
+
+        <div class="modal-container" data-modal-container>
+
+          <div class="overlay" data-overlay></div>
+
+          <section class="testimonials-modal">
+
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+            <div class="modal-img-wrapper">
+              <figure class="modal-avatar-box">
+                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
+              </figure>
+
+              <img src="./assets/images/icon-quote.svg" alt="quote icon">
+            </div>
+
+            <div class="modal-content">
+
+              <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
+
+              <time datetime="2021-06-14">14 June, 2021</time>
+
+              <div data-modal-text>
+                <p>
+                  Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                  lot of experience
+                  and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                  consectetur adipiscing
+                  elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                </p>
+              </div>
+
+            </div>
+
+          </section>
+
+        </div>
+
+
+        <!-- 模态框 -->
+        <div id="myModal" class="image-modal">
+            <!-- 模态框内容 -->
+            <div class="image-modal-content">
+                <button class="image-close">
+                  <ion-icon name="close-outline"></ion-icon>
+                </button>
+                <!-- <span class="image-close">&times;</span> -->
+                <!-- 这里显示图片 -->
+                <img class="modal-content-image" src="">
+            </div>
+        </div>
+
+       <!--
+          - clients
+        -->
+
+        <section class="clients">
+
+          <h3 class="h3 clients-title" id="fourth_subtitle" >证书</h3>
+
+          <ul class="clients-list has-scrollbar"  >
+
+            <li class="clients-item" >
+              <img certificate-img-src src="./assets/images/04_certificates/certificate-1.png" width="50" alt="client logo" >
+            </li>
+
+            <li class="clients-item">
+              <img certificate-img-src src="./assets/images/04_certificates/certificate-5.png" width="50" alt="client logo">
+            </li>
+			
+			      <li class="clients-item">
+              <img certificate-img-src src="./assets/images/04_certificates/certificate-100.jpg"  alt="client logo">
+            </li>
+			  
+            <li class="clients-item">
+              <img certificate-img-src src="./assets/images/04_certificates/certificate-6.png" width="50" alt="client logo">
+            </li>
+			  
+			      <li class="clients-item">
+              <img certificate-img-src src="./assets/images/04_certificates/certificate-101.png"  alt="client logo">
+            </li>
+            <li class="clients-item">
+              <img certificate-img-src src="./assets/images/04_certificates/certificate-7.jpg" width="50" alt="client logo">
+            </li>
+
+            <li class="clients-item">
+              <img certificate-img-src src="./assets/images/04_certificates/certificate-4.png" width="50" alt="client logo">
+            </li>
+
+            <li class="clients-item">
+              <img certificate-img-src src="./assets/images/04_certificates/certificate-10.jpg" width="50" alt="client logo">
+            </li>
+
+            <li class="clients-item">
+              <img certificate-img-src src="./assets/images/04_certificates/certificate-80.png" width="50" alt="client logo">
+            </li>
+
+            <li class="clients-item">
+              <img certificate-img-src src="./assets/images/04_certificates/certificate-8.png" width="50" alt="client logo">
+            </li>
+
+            <li class="clients-item">
+              <img certificate-img-src src="./assets/images/04_certificates/certificate-3.png" width="50" alt="client logo">
+            </li>
+
+            <li class="clients-item">
+              <img certificate-img-src src="./assets/images/04_certificates/certificate-4.png" width="50" alt="client logo">
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+      <!--
+        - #RESUME
+      -->
+
+      <article class="resume" id="article_title_2">
+
+        <header>
+          <h2 class="h2 article-title" id="resume_page">Resume</h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3" id="resume_page_title_1">教育经历</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title" id="education_1">多伦多大学（University of Toronto）<br>（辅修：人工智能工程）</h4>
+
+              <span id="education_1_time">2018年.9月-2023年.5月</span>
+              <p class="timeline-text" id="education_1_text"> 
+                <b>学院：</b>应用科学与工程学院 （Faculty of Applied Science & Engineering）<br>
+                <b>部门：</b>电子计算机部门（Department of Electrical and Computer Engineering）<br>
+                <b>专业：</b>计算机工程（Computer Engineering）(辅修：人工智能工程) <br>
+                <b>学位：</b>多伦多大学应用科学学士学位 & 辅修人工智能工程 <br><br>
+                
+                <b>描述：</b>世界QA排名Top20，在加拿大排名第一。 <br>
+                在大学生活中我有机会参加软件工程相关的项目，例如SQL数据库的管理，机械手臂的指令运作，网络聊天界面的实现，以及AI垃圾分类等项目。 这些项目让我的大学生活过的非常的充实，也让我对于计算机领域有了更加深刻的印象。<br>
+                <b>主修课程：</b>编程语言，数据结构，算法分析，FPGA单片机，通讯网络，操作系统，数据库，深度学习 <br>
+              </p>
+
+              <p class="timeline-text" id="education_1_text"> 
+                多伦多大学（University of Toronto）的电子与计算机工程（Electrical and Computer Engineering，ECE）专业是一门卓越的工程学科，为学生提供广泛的学术和研究机会，涵盖了电子工程和计算机工程的多个领域。
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title" id="education_2">多伦多大学-IFP(International Foundation Program)</h4>
+
+              <span id="education_2_time">2017年.9月 — 2018年.5月</span>
+
+              <p class="timeline-text" id="education_2_text">
+                The International Foundation Program (IFP) is a unique offering that combines conditional 
+                acceptance to the University of Toronto with intensive English language and academic skills 
+                development instruction, combined with for-credit courses.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title" id="education_3">深圳（南山）中加学校</h4>
+
+              <span id="education_3_time">2014年.9月 — 2017年.9月</span>
+
+              <p class="timeline-text" id="education_3_text">
+                深圳（南山）中加协和学院是一所私立中加双语高中，位于深圳市南山区。SCCSC为900多名10年级、11年级和12年级的学生提供双文凭课程。SCCSC学生毕业于加拿大新不伦瑞克省，同时获得中国高中文凭和加拿大高中文凭。
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3" id="project_experience">项目经历</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">
+                <a href="https://github.com/xujintao1000/GIS_map_software_design_project" style="color:#FFFFFF;" id="my_project_1">KUKA机械手臂实现物体自动搬运并躲避障碍(C/C++)</a>
+              </h4>
+
+              <span id="my_project_1_time">2023年1月 — 2023年4月</span>
+
+              <p class="timeline-text" id="my_project_1_text">
+                <b>项目背景：</b>
+                在现代生产线中，高效、精确的物体搬运对于提升生产效率和产品质量至关重要。考虑到生产环境中可能出现的障碍物，机械手臂需要具备自主导航和避障功能。本项目旨在利用KUKA机械手臂实现物体的自动搬运，并在搬运过程中智能躲避障碍物，确保搬运任务的安全性和高效性。
+                <br><br>
+                <b>项目描述：</b>
+                设计并实现KUKA机械手臂的自动搬运路径规划。
+                <br><br>
+                <b>项目职责：</b>
+                编写控制程序：在MATLAB中编写控制程序，用于生成机器人的运动轨迹、关节角度等。<br>
+                发送控制指令：将编写好的控制程序通过通信连接发送到KUKA机器人。在KUKA机器人上运行控制程序，实现对机器人的控制。
+                <br><br>
+                <b>项目目标：</b>
+                提前算好在经过障碍物体时是否会碰触到手臂自身
+                确保机械手臂搬运的准确性和稳定性，确认物体能够安全移动到终点。<br>
+              </p>
+
+            </li>
+
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">
+                <a href="https://github.com/xujintao1000/GIS_map_software_design_project" style="color:#FFFFFF;" id="my_project_1">GIS (Map) 可视化地图软件设计项目 (C/C++)</a>
+              </h4>
+
+              <span id="my_project_1_time">2019年9月 — 2020年5月</span>
+
+              <p class="timeline-text" id="my_project_1_text">
+                <b><u>项目目标：</b></u> 使用C++设计GIS地图软件； 其目的是为用户提供“搜索功能”； 例如道路位置搜索、最短路径搜索等。<br> <b><u>项目描述：</b></u> 将Open Street Map数据导入到该类中，并使用面向对象的方法将数据逐步显示在主用户界面上。 使用A*算法在两个方向上搜索，找到最短路径。<br> <b><u>项目职责：</b></u>负责团队建设、合理项目布局、任务分配。 在项目中，我负责数据结构和数据可视化设计； 数据算法分析与设计； 用户反馈时间优化设计
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">
+                <a href="https://github.com/xujintao1000/Garbage-Classification" style="color:#FFFFFF;" id="my_project_2">垃圾分类深度学习模型设计 (AI神经网络)</a>
+              </h4>
+
+              <span id="my_project_2_time">2021年1月 — 2021年5月</span>
+
+              <p class="timeline-text" id="my_project_2_text">
+                <b><u>项目目标：</b></u> 设计能够对常见生活垃圾进行识别和分类的软件。<br> <b><u>项目描述：</b></u> 对现有数据（40类垃圾）进行深度学习模型训练； 使用Data Augmentation方法扩充数据，并将其分为训练集和测试集； 根据ResNet模型原理制作垃圾分类模型； 不断更新超级参数（模型层数、mini-batch大小、激活函数、损失函数）以增加训练的准确性。<br> <b><u>项目职责：</b></u> 主要负责数据增强、模型构建和测试。<br> 
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">
+                <a href="https://github.com/xujintao1000/DE1_SoC_GameProject" style="color:#FFFFFF;" id="my_project_3">FPGA 硬件编程项目 (Verilog)</a>
+              </h4>
+
+              <span id="my_project_3_time">2020年1月 — 2020年5月</span>
+
+              <p class="timeline-text" id="my_project_3_text">
+                <b><u>简介：</b></u>现场可编程门阵列 (FPGA) 是一种设计为在制造后进行配置的集成电路。 FPGA配置通常使用硬件描述语言（Verilog）来指定。 在本项目中，我们主要使用DE1_SoC Board来配置项目。<br> <b><u>项目目标：</b></u> 飞机避障项目应用于DE1_SoC Board <br> <b><u>项目描述：</b></u>我们正在尝试为这个项目制作一个有趣的游戏，名为“移动飞机”。 游戏的目的是控制飞机上下移动，避免撞来的墙壁。 用户每次穿过墙壁可以获得1点积分。 此外，如果用户击中硬币，飞机也会发生变化。 每当用户收集到 10 点时，墙壁的颜色就会改变。 如果飞机撞到墙壁，游戏就结束，用户可以按任意KEY重新开始。 下面列出了操作“移动飞机”游戏的更多细节。 <br> <b><u>项目职责：</b></u> 在这个项目中，我主要负责飞行器的移动、触控和升级。 另外，我还负责调整整个项目的速度以及调整游戏中随机障碍物的设置，以确保整个项目能够完全在FPGA上实现。<br>
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">
+                <a href="https://github.com/xujintao1000/DE1_SoC_GameProject" style="color:#FFFFFF;" id="my_project_4">国际机场数据库管理项目 (SQL)</a>
+              </h4>
+
+              <span id="my_project_4_time">2021年1月 — 2021年5月</span>
+
+              <p class="timeline-text" id="my_project_4_text">
+
+                <b><u>简介：</b></u>在这个项目中，我开发了一个数据库文件，该文件利用广泛的国际机场数据库来有效地确定最合适的航班选择，包括根据每位乘客的喜好和要求量身定制的单次或多次转机航班。<br> <b><u>项目目标：</b></u> 该项目的主要目标是创建一个复杂的数据库系统，通过利用乘客偏好和实时机场数据推荐最合适的航班选项来优化航班计划。<br> <b><u>项目描述：</b></u> 该项目涉及设计和实施一个动态且可扩展的数据库，集成乘客资料、机场信息和飞机功能，根据乘客的偏好和可用的航班数据为乘客生成个性化的航班建议。<br> <b><u>项目职责：</b></u> 作为项目团队的关键成员，我的职责包括设计数据库模式、开发 SQL 查询、实施飞行优化算法以及确保整个项目生命周期中数据的准确性和完整性。<br>
+              </p>
+
+            </li>
+
+
+          </ol>
+
+        </section>
+
+        <section class="skill">
+
+          <h3 class="h3 skills-title" id="my_skill_level">My skills</h3>
+
+          <ul class="skills-list content-card">
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5" id="my_skill_level_1">Software Programming(C/C++/Python/Matlab)</h5>
+                <data value="80">80%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 80%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5" id="my_skill_level_2">Software Programming(Arduino/Processing/PyQt/Verilog/Java)</h5>
+                <data value="55">55%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 55%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5" id="my_skill_level_3">Database(MySQL,Server,Git)</h5>
+                <data value="83">83%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 83%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5" id="my_skill_level_4">Network(Multi-threading, Operating System, TCP/IP)</h5>
+                <data value="45">45%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 45%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5" id="my_skill_level_5">hardware(PC Assembly, Verilog) </h5>
+                <data value="30">30%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 30%;"></div>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <article class="portfolio" id="article_title_3">
+
+        <header>
+          <h2 class="h2 article-title">Portfolio</h2>
+        </header>
+
+        <section class="projects">
+
+          <ul class="filter-list">
+
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Web design</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Applications</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Web development</button>
+            </li>
+
+          </ul>
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value>Select category</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Web design</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Applications</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Web development</button>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <ul class="project-list">
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-1.jpg" alt="finance" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Finance</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-2.png" alt="orizon" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Orizon</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web design">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-3.jpg" alt="fundo" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Fundo</h3>
+
+                <p class="project-category">Web design</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="applications">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-4.png" alt="brawlhalla" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Brawlhalla</h3>
+
+                <p class="project-category">Applications</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web design">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-5.png" alt="dsm." loading="lazy">
+                </figure>
+
+                <h3 class="project-title">DSM.</h3>
+
+                <p class="project-category">Web design</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web design">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-6.png" alt="metaspark" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">MetaSpark</h3>
+
+                <p class="project-category">Web design</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-7.png" alt="summary" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Summary</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="applications">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-8.jpg" alt="task manager" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Task Manager</h3>
+
+                <p class="project-category">Applications</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-9.png" alt="arrival" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Arrival</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #BLOG
+      -->
+
+      <article class="blog" id="article_title_4">
+
+        <header>
+          <h2 class="h2 article-title">Blog</h2>
+        </header>
+
+        <section class="blog-posts">
+
+          <ul class="blog-posts-list">
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-1.jpg" alt="Design conferences in 2022" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Design conferences in 2022</h3>
+
+                  <p class="blog-text">
+                    Veritatis et quasi architecto beatae vitae dicta sunt, explicabo.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-2.jpg" alt="Best fonts every designer" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Best fonts every designer</h3>
+
+                  <p class="blog-text">
+                    Sed ut perspiciatis, nam libero tempore, cum soluta nobis est eligendi.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-3.jpg" alt="Design digest #80" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Design digest #80</h3>
+
+                  <p class="blog-text">
+                    Excepteur sint occaecat cupidatat no proident, quis nostrum exercitationem ullam corporis suscipit.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-4.jpg" alt="UI interactions of the week" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">UI interactions of the week</h3>
+
+                  <p class="blog-text">
+                    Enim ad minim veniam, consectetur adipiscing elit, quis nostrud exercitation ullamco laboris nisi.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-5.jpg" alt="The forgotten art of spacing" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">The forgotten art of spacing</h3>
+
+                  <p class="blog-text">
+                    Maxime placeat, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-6.jpg" alt="Design digest #79" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Design digest #79</h3>
+
+                  <p class="blog-text">
+                    Optio cumque nihil impedit uo minus quod maxime placeat, velit esse cillum.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #CONTACT
+      -->
+
+      <article class="contact" id="article_title_5">
+
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+
+        <section class="mapbox" data-mapbox>
+          <figure>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d199666.5651251294!2d-121.58334177520186!3d38.56165006739519!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x809ac672b28397f9%3A0x921f6aaa74197fdb!2sSacramento%2C%20CA%2C%20USA!5e0!3m2!1sen!2sbd!4v1647608789441!5m2!1sen!2sbd"
+              width="400" height="300" loading="lazy"></iframe>
+          </figure>
+        </section>
+
+        <section class="contact-form">
+
+          <h3 class="h3 form-title">Contact Form</h3>
+
+          <form action="#" class="form" data-form>
+
+            <div class="input-wrapper">
+              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+
+              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+            </div>
+
+            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+
+            <button class="form-btn" type="submit" disabled data-form-btn>
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Send Message</span>
+            </button>
+
+          </form>
+
+        </section>
+
+      </article>
+
+    </div>
+
+  </main>
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
