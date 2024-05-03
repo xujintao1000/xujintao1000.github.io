@@ -198,7 +198,18 @@
 
 
 
-
+      <!-- 模态框 -->
+      <div id="myModal" class="image-modal">
+        <!-- 模态框内容 -->
+        <div class="image-modal-content">
+            <button class="image-close">
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+            <!-- <span class="image-close">&times;</span> -->
+            <!-- 这里显示图片 -->
+            <img class="modal-content-image" src="">
+        </div>
+    </div>
 
       <!--
         - #ABOUT
@@ -555,18 +566,7 @@
         </div>
 
 
-        <!-- 模态框 -->
-        <div id="myModal" class="image-modal">
-            <!-- 模态框内容 -->
-            <div class="image-modal-content">
-                <button class="image-close">
-                  <ion-icon name="close-outline"></ion-icon>
-                </button>
-                <!-- <span class="image-close">&times;</span> -->
-                <!-- 这里显示图片 -->
-                <img class="modal-content-image" src="">
-            </div>
-        </div>
+
 
        <!--
           - clients
@@ -658,19 +658,38 @@
 
             <li class="timeline-item">
 
-              <h4 class="h4 timeline-item-title" id="education_1">多伦多大学（University of Toronto）<br>（辅修：人工智能工程）</h4>
+              <h4 class="h4 timeline-item-title" id="education_1">多伦多大学（University of Toronto） <p class="text-right">计算机工程（AI Minor） | 本科 </p></h4>
 
-              <span id="education_1_time">2018年.9月-2023年.5月</span>
+              <span id="education_1_time" class="text-right" >2018年.9月-2023年.6月</span>
               <p class="timeline-text" id="education_1_text"> 
                 <b>学院：</b>应用科学与工程学院 （Faculty of Applied Science & Engineering）<br>
                 <b>部门：</b>电子计算机部门（Department of Electrical and Computer Engineering）<br>
                 <b>专业：</b>计算机工程（Computer Engineering）(辅修：人工智能工程) <br>
                 <b>学位：</b>多伦多大学应用科学学士学位 & 辅修人工智能工程 <br><br>
+                <b>主修课程：</b>编程语言，数据结构，算法分析，FPGA单片机，通讯网络，操作系统，数据库，深度学习 <br>
                 
                 <b>描述：</b>世界QA排名Top20，在加拿大排名第一。 <br>
                 在大学生活中我有机会参加软件工程相关的项目，例如SQL数据库的管理，机械手臂的指令运作，网络聊天界面的实现，以及AI垃圾分类等项目。 这些项目让我的大学生活过的非常的充实，也让我对于计算机领域有了更加深刻的印象。<br>
-                <b>主修课程：</b>编程语言，数据结构，算法分析，FPGA单片机，通讯网络，操作系统，数据库，深度学习 <br>
-              </p>
+                 </p>
+
+                
+                 <section class="clients">
+
+                  <h3 class="h3 clients-title" id="fourth_subtitle" >证书</h3>
+        
+                  <ul class="clients-list has-scrollbar"  >
+        
+                    <li class="clients-item" >
+                      <img certificate-img-src src="./assets/images/04_certificates/certificate-10.jpg" width="50" alt="client logo" >
+                    </li>
+                    
+                    <li class="clients-item" >
+                      <img certificate-img-src src="./assets/images/04_certificates/certificate-80.png" width="50" alt="client logo" >
+                    </li>
+                  </ul>
+        
+                </section>
+        
 
               <p class="timeline-text" id="education_1_text"> 
                 多伦多大学（University of Toronto）的电子与计算机工程（Electrical and Computer Engineering，ECE）专业是一门卓越的工程学科，为学生提供广泛的学术和研究机会，涵盖了电子工程和计算机工程的多个领域。

@@ -1976,3 +1976,8 @@ textarea.form-input::-webkit-resizer { display: none; }
 .image-close:focus { opacity: 1; }
 
 .image-close ion-icon { --ionicon-stroke-width: 50px; }
+
+
+.text-right{
+  text-align: right;
+}
