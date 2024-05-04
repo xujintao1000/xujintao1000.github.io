@@ -185,15 +185,24 @@ for (let i = 0; i < navigationLinks.length; i++) {
 // 获取图片和模态框元素
 // var img = document.getElementById('myImage');
 
-var certificateImgSrc = document.querySelectorAll('[certificate-img-src]');
+var certificateImgSrc = document.querySelectorAll('[image_show_up]');
 var imageModalImg = document.querySelector('.image-modal-content img');
 var modal = document.getElementById('myModal');
+var modalImage = document.querySelector(".modal-content-image");
+var background_hide = document.querySelector("[background_hide]");
+
 
 // add click event to all modal items
 for (let i = 0; i < certificateImgSrc.length; i++) {
   certificateImgSrc[i].addEventListener("click", function () {
+    // console.log(certificateImgSrc[i].outerHTML())
+
+    var img_src = certificateImgSrc[i].querySelector('img').getAttribute("src")
     modal.style.display = "block";
-    imageModalImg.src = this.src; // 将模态框中的图片源设置为被点击的图片源
+    // modalImage.src = this.src;
+    background_hide.classList.toggle("active");
+    imageModalImg.src = img_src;
+    // imageModalImg.src = this.src; // 将模态框中的图片源设置为被点击的图片源
 
   });
 
@@ -203,9 +212,15 @@ for (let i = 0; i < certificateImgSrc.length; i++) {
 var span = document.getElementsByClassName("image-close")[0];
 span.onclick = function() { 
     modal.style.display = "none";
+    background_hide.classList.toggle("active");
 }
 
-var modalImage = document.querySelector(".modal-content-image");
+background_hide.onclick = function() {
+  modal.style.display = "none";
+  background_hide.classList.toggle("active");
+}
+
+
 // 设置弹窗内图片的宽度
 function setModalImageWidth() {
   
