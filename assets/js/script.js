@@ -6,8 +6,8 @@
 // 姓名，个人标签1，个人标签2，
 const my_info = ["徐锦涛", "编程开发人员 / 计算机工程背景", "摄影爱好者 / DIY台式机爱好者",]
 // 导航栏
-const js_sidebar_title = ["主页", "简历", "文档", "个人经历", "联系方式"]
-
+// const js_sidebar_title = ["主页", "简历", "文档", "个人经历", "联系方式"]
+const js_sidebar_title = ["主页", "简历", "文档", "联系方式"]
 
 
 document.getElementById('my_name').textContent = my_info[0];
